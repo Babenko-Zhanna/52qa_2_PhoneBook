@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="SmokeTest" verbose="1">
+    <test name="PositiveTest">
+        <classes>
+            <class name="PhoneBook.CreateAccountTests">
+                <methods>
+                    <include name=".*Positive.*"/>
+                </methods>
+            </class>
+
+            <class name="PhoneBook.LoginTests">
+                <methods>
+                    <exclude name=".*Negative.*"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
