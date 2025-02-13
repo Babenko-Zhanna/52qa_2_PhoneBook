@@ -53,6 +53,8 @@ public class BaseHelper {
             Alert alert = wait.until(ExpectedConditions.alertIsPresent());
             alert.accept();  // or alert.dismiss(); based on your use case
             System.out.println("Alert was present and accepted.");
+        } catch (TimeoutException e) {
+            // No alert present within timeout, proceed with screenshot capture
         } catch (NoAlertPresentException e) {
             // No alert, proceed with screenshot capture
         }
