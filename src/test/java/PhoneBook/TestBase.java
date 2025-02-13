@@ -19,12 +19,12 @@ public class TestBase {
 
     @BeforeSuite // один раз, перед набором тестов
     public void beforeSuite(){
-        app.init();
+        //app.init();
     }
 
     @BeforeMethod  // перед каждым тестом
     public void setUp(Method method) {
-        // app.init();
+        app.init();
         logger.info("Test is started: [" + method.getName() + "]");
     }
 
@@ -36,12 +36,12 @@ public class TestBase {
             logger.error("Test is FAILED: [" + method.getName() + "], Screenshot: [" + app.getUserHelper().takeScreenshot() + "]");
             //logger.error("Test is FAILED: [" + method.getName() + "]");
         }
-        // app.stop();
+        app.stop();
     }
 
     @AfterSuite (enabled = true)
     public void afterSuite(){
-        app.stop();
+        //app.stop();
     }
 }
 
