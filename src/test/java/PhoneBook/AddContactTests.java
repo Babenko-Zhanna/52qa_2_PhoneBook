@@ -19,12 +19,12 @@ public class AddContactTests extends TestBase {
 
     @BeforeMethod
     public void precondition() {
-        if (app.getUserHelper().isSignOutButtonPresent()) {
+/*        if (app.getUserHelper().isSignOutButtonPresent()) {
             logger.info("User is already logged in.");
         } else {
-            app.getUserHelper().login(UserData.VALID_EMAIL, UserData.VALID_PASSWORD);
             logger.info("User was successfully logged in.");
-        }
+        }*/
+        app.getUserHelper().login(UserData.VALID_EMAIL, UserData.VALID_PASSWORD);
     }
 
     @Test

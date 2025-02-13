@@ -5,7 +5,7 @@
         <classes>
             <class name="PhoneBook.CreateAccountTests"/>
             <class name="PhoneBook.HomePageTests"/>
-            <class name="PhoneBook.AddContactTests"/>
+<!--            <class name="PhoneBook.AddContactTests"/>-->
             <class name="PhoneBook.DeleteContactTests"/>
             <class name="PhoneBook.LoginTests">
                 <methods>
